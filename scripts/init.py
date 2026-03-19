@@ -2,7 +2,7 @@ import os
 import json
 
 # === КОРНЕВАЯ ПАПКА ===
-ROOT_DIR = "../ai-core-source/json"
+ROOT_DIR = "../json"
 
 # === СТРУКТУРА САЙТА ===
 STRUCTURE = {

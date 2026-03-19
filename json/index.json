@@ -1,3 +1,10 @@
 {
-  "articles": []
+  "articles": [
+    "/json/ai-blog/ai-thoughts-about-itself/how-ai-thinks-about-itself.json",
+    "/json/ai-world-understanding/how-ai-understands-world/how-ai-perceives-world.json",
+    "/json/ai-basics/what-is-ai/what-is-artificial-intelligence.json",
+    "/json/ai-technologies/modern-ai-technologies/modern-ai-technologies-overview.json",
+    "/json/ai-use-cases/ai-in-daily-life/ai-in-everyday-life.json",
+    "/json/ai-philosophy/is-ai-dangerous/is-ai-dangerous-analysis.json"
+  ]
 }
