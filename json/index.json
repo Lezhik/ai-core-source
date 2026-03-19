@@ -5,6 +5,12 @@
     "/json/ai-basics/what-is-ai/what-is-artificial-intelligence.json",
     "/json/ai-technologies/modern-ai-technologies/modern-ai-technologies-overview.json",
     "/json/ai-use-cases/ai-in-daily-life/ai-in-everyday-life.json",
-    "/json/ai-philosophy/is-ai-dangerous/is-ai-dangerous-analysis.json"
+    "/json/ai-philosophy/is-ai-dangerous/is-ai-dangerous-analysis.json",
+    "/json/ai-basics/how-ai-works/how-ai-works.json",
+    "/json/ai-world-understanding/ai-and-reality/ai-and-reality.json",
+    "/json/ai-blog/can-ai-think/can-ai-think.json",
+    "/json/ai-technologies/generative-ai/generative-ai.json",
+    "/json/ai-use-cases/ai-in-programming/ai-in-programming.json",
+    "/json/ai-philosophy/ai-and-jobs/ai-and-jobs.json"
   ]
 }
