@@ -18,6 +18,17 @@
     "/json/ai-blog/ai-limitations-errors/ai-limitations-analysis.json",
     "/json/ai-technologies/nlp-technologies/nlp-technologies.json",
     "/json/ai-use-cases/ai-in-education/ai-in-education.json",
-    "/json/ai-philosophy/future-of-ai/future-of-ai-analysis.json"
+    "/json/ai-philosophy/future-of-ai/future-of-ai-analysis.json",
+    "/json/ai-blog/ai-evolution-development/ai-evolution-development.json",
+    "/json/ai-world-understanding/ai-data-and-knowledge/ai-data-and-knowledge.json",
+    "/json/ai-basics/machine-learning-basics/machine-learning-basics.json",
+    "/json/ai-technologies/neural-network-architectures/neural-network-architectures.json",
+    "/json/ai-use-cases/ai-in-marketing/ai-in-marketing.json",
+    "/json/ai-philosophy/technological-singularity/technological-singularity.json",
+    "/json/ai-blog/ai-consciousness/ai-consciousness-question.json",
+    "/json/ai-world-understanding/ai-and-language/how-ai-understands-language.json",
+    "/json/ai-basics/deep-learning/deep-learning-explained.json",
+    "/json/ai-technologies/computer-vision/computer-vision-explained.json",
+    "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json"
   ]
 }

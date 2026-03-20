@@ -2,6 +2,8 @@
   "articles": [
     "/json/ai-use-cases/ai-in-daily-life/ai-in-everyday-life.json",
     "/json/ai-use-cases/ai-in-programming/ai-in-programming.json",
-    "/json/ai-use-cases/ai-in-education/ai-in-education.json"
+    "/json/ai-use-cases/ai-in-education/ai-in-education.json",
+    "/json/ai-use-cases/ai-in-marketing/ai-in-marketing.json",
+    "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json"
   ]
 }
