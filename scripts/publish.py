@@ -163,8 +163,12 @@ def generate_menu_html(current_html: str) -> str:
 # 1. Чтение JSON статьи по полному пути
 # =========================================
 def read_json_article(full_json_path: str) -> dict:
-    with open('..' + full_json_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    rp = '..' + full_json_path
+    if os.path.exists(rp):
+        with open(rp, "r", encoding="utf-8") as f:
+            return json.load(f)
+    print('JSON not found:', rp)
+    return None
 
 # =========================================
 # 2. Формирование относительной ссылки на HTML из JSON
@@ -196,6 +200,8 @@ def json_to_html_full(full_json_path: str) -> str:
 # =========================================
 def article_card(full_json_path: str, current_html_rel: str) -> str:
     data = read_json_article(full_json_path)
+    if data is None:
+        return None
     link = json_to_html_link(full_json_path, current_html_rel)
     title = data.get("title", "Без названия")
     description = data.get("description", "")
@@ -212,7 +218,11 @@ def article_card(full_json_path: str, current_html_rel: str) -> str:
 # 6. Формирование текста с карточками по списку json файлов
 # =========================================
 def cards_from_json_list(json_paths: list, current_html_rel: str) -> str:
-    cards = [article_card(path, current_html_rel) for path in json_paths]
+    cards = []
+    for path in json_paths[::-1]:
+        card = article_card(path, current_html_rel)
+        if card is not None:
+            cards.append(card)
     return '\n'.join(cards)
 
 # =========================================
@@ -220,8 +230,10 @@ def cards_from_json_list(json_paths: list, current_html_rel: str) -> str:
 # =========================================
 def generate_articles_list(json_list, current_html_rel):
     items = []
-    for full_json_path in json_list:
+    for full_json_path in json_list[::-1]:
         data = read_json_article(full_json_path)
+        if data is None:
+            continue
         title = data.get("title", "Без названия")
         link = json_to_html_link(full_json_path, current_html_rel)
         items.append(f'<li><a href="{link}">{title}</a></li>')

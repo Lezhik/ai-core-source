@@ -1,6 +1,8 @@
 {
   "articles": [
     "/json/ai-basics/what-is-ai/what-is-artificial-intelligence.json",
-    "/json/ai-basics/how-ai-works/how-ai-works.json"
+    "/json/ai-basics/how-ai-works/how-ai-works.json",
+    "/json/ai-basics/neural-networks-explained/neural-networks-explained.json",
+    "/json/ai-basics/large-language-models/llm-explained.json"
   ]
 }
