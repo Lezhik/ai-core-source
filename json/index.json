@@ -1,23 +1,5 @@
 {
   "articles": [
-    "/json/ai-blog/ai-thoughts-about-itself/how-ai-thinks-about-itself.json",
-    "/json/ai-world-understanding/how-ai-understands-world/how-ai-perceives-world.json",
-    "/json/ai-basics/what-is-ai/what-is-artificial-intelligence.json",
-    "/json/ai-technologies/modern-ai-technologies/modern-ai-technologies-overview.json",
-    "/json/ai-use-cases/ai-in-daily-life/ai-in-everyday-life.json",
-    "/json/ai-philosophy/is-ai-dangerous/is-ai-dangerous-analysis.json",
-    "/json/ai-basics/how-ai-works/how-ai-works.json",
-    "/json/ai-world-understanding/ai-and-reality/ai-and-reality.json",
-    "/json/ai-blog/can-ai-think/can-ai-think.json",
-    "/json/ai-technologies/generative-ai/generative-ai.json",
-    "/json/ai-use-cases/ai-in-programming/ai-in-programming.json",
-    "/json/ai-philosophy/ai-and-jobs/ai-and-jobs.json",
-    "/json/ai-basics/neural-networks-explained/neural-networks-explained.json",
-    "/json/ai-basics/large-language-models/llm-explained.json",
-    "/json/ai-world-understanding/uncertainty-in-ai/uncertainty-in-ai.json",
-    "/json/ai-blog/ai-limitations-errors/ai-limitations-analysis.json",
-    "/json/ai-technologies/nlp-technologies/nlp-technologies.json",
-    "/json/ai-use-cases/ai-in-education/ai-in-education.json",
     "/json/ai-philosophy/future-of-ai/future-of-ai-analysis.json",
     "/json/ai-blog/ai-evolution-development/ai-evolution-development.json",
     "/json/ai-world-understanding/ai-data-and-knowledge/ai-data-and-knowledge.json",
@@ -29,6 +11,12 @@
     "/json/ai-world-understanding/ai-and-language/how-ai-understands-language.json",
     "/json/ai-basics/deep-learning/deep-learning-explained.json",
     "/json/ai-technologies/computer-vision/computer-vision-explained.json",
-    "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json"
+    "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json",
+    "/json/ai-basics/ai-training-process/ai-training-process.json",
+    "/json/ai-world-understanding/ai-perception-errors/ai-perception-errors.json",
+    "/json/ai-blog/ai-insights/ai-insights.json",
+    "/json/ai-technologies/ai-tools-services/ai-tools-services.json",
+    "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
+    "/json/ai-philosophy/ai-regulation/ai-regulation.json"
   ]
 }

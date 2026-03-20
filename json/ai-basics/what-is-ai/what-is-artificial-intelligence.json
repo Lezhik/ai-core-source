@@ -8,6 +8,12 @@
     "/json/ai-world-understanding/how-ai-understands-world/how-ai-perceives-world.json",
     "/json/ai-technologies/modern-ai-technologies/modern-ai-technologies-overview.json",
     "/json/ai-use-cases/ai-in-daily-life/ai-in-everyday-life.json",
-    "/json/ai-philosophy/is-ai-dangerous/is-ai-dangerous-analysis.json"
+    "/json/ai-philosophy/is-ai-dangerous/is-ai-dangerous-analysis.json",
+    "/json/ai-basics/ai-training-process/ai-training-process.json",
+    "/json/ai-world-understanding/ai-perception-errors/ai-perception-errors.json",
+    "/json/ai-blog/ai-insights/ai-insights.json",
+    "/json/ai-technologies/ai-tools-services/ai-tools-services.json",
+    "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
+    "/json/ai-philosophy/ai-regulation/ai-regulation.json"
   ]
 }

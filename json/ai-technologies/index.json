@@ -4,6 +4,7 @@
     "/json/ai-technologies/generative-ai/generative-ai.json",
     "/json/ai-technologies/nlp-technologies/nlp-technologies.json",
     "/json/ai-technologies/neural-network-architectures/neural-network-architectures.json",
-    "/json/ai-technologies/computer-vision/computer-vision-explained.json"
+    "/json/ai-technologies/computer-vision/computer-vision-explained.json",
+    "/json/ai-technologies/ai-tools-services/ai-tools-services.json"
   ]
 }
