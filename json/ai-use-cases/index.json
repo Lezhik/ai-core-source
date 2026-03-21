@@ -5,6 +5,7 @@
     "/json/ai-use-cases/ai-in-education/ai-in-education.json",
     "/json/ai-use-cases/ai-in-marketing/ai-in-marketing.json",
     "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json",
-    "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json"
+    "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
+    "/json/ai-use-cases/ai-content-generation/ai-content-generation.json"
   ]
 }

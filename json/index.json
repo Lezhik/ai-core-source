@@ -1,11 +1,5 @@
 {
   "articles": [
-    "/json/ai-philosophy/future-of-ai/future-of-ai-analysis.json",
-    "/json/ai-blog/ai-evolution-development/ai-evolution-development.json",
-    "/json/ai-world-understanding/ai-data-and-knowledge/ai-data-and-knowledge.json",
-    "/json/ai-basics/machine-learning-basics/machine-learning-basics.json",
-    "/json/ai-technologies/neural-network-architectures/neural-network-architectures.json",
-    "/json/ai-use-cases/ai-in-marketing/ai-in-marketing.json",
     "/json/ai-philosophy/technological-singularity/technological-singularity.json",
     "/json/ai-blog/ai-consciousness/ai-consciousness-question.json",
     "/json/ai-world-understanding/ai-and-language/how-ai-understands-language.json",
@@ -17,6 +11,12 @@
     "/json/ai-blog/ai-insights/ai-insights.json",
     "/json/ai-technologies/ai-tools-services/ai-tools-services.json",
     "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
-    "/json/ai-philosophy/ai-regulation/ai-regulation.json"
+    "/json/ai-philosophy/ai-regulation/ai-regulation.json",
+    "/json/ai-blog/ai-future-predictions/ai-future-predictions.json",
+    "/json/ai-world-understanding/ai-and-science/ai-and-science.json",
+    "/json/ai-basics/ai-training-data/ai-training-data.json",
+    "/json/ai-technologies/ai-tech-future/ai-tech-future.json",
+    "/json/ai-use-cases/ai-content-generation/ai-content-generation.json",
+    "/json/ai-philosophy/ai-control-problem/ai-control-problem.json"
   ]
 }
