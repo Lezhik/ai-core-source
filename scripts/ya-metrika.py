@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 ## получение токена
 ## - Открыть ссылку: https://oauth.yandex.ru/authorize?response_type=token&client_id=f85e39d58a9841648a842f88e861ffb6
@@ -12,7 +13,8 @@ TOKEN = config["token"]
 COUNTER_ID = config["counterId"]
 
 API_URL  = "https://api-metrika.yandex.net/stat/v1/data"
-FILE_NAME = "../stats/metrika.json"
+FILE_PATH = "../stats"
+FILE_NAME = f"{FILE_PATH}/metrika.json"
 
 
 # ==========================
@@ -64,6 +66,7 @@ data = response.json()
 # СОХРАНЕНИЕ В ФАЙЛ
 # ==========================
 
+os.makedirs(FILE_PATH, exist_ok=True)
 with open(FILE_NAME, "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 

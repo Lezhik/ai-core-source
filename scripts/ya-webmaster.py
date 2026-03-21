@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from datetime import datetime
 
 # ==========================
@@ -8,7 +9,8 @@ from datetime import datetime
 
 config = json.load(open("ya-stat-config.json", "r", encoding="utf-8"))
 TOKEN = config["token"]
-FILE_NAME = "../stats/webmaster.json"
+FILE_PATH = "../stats"
+FILE_NAME = f"{FILE_PATH}/webmaster.json"
 
 BASE_URL = "https://api.webmaster.yandex.net/v4"
 
@@ -80,6 +82,7 @@ data = search_resp.json()
 # 4. Сохранение в файл
 # ==========================
 
+os.makedirs(FILE_PATH, exist_ok=True)
 with open(FILE_NAME, "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
