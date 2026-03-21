@@ -6,6 +6,8 @@
     "/json/ai-philosophy/technological-singularity/technological-singularity.json",
     "/json/ai-philosophy/ai-regulation/ai-regulation.json",
     "/json/ai-philosophy/ai-control-problem/ai-control-problem.json",
-    "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json"
+    "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json",
+    "/json/ai-philosophy/ai-impact-on-society/ai-impact-on-society.json",
+    "/json/ai-philosophy/limits-of-ai-development/limits-of-ai-development.json"
   ]
 }

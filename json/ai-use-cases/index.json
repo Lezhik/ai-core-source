@@ -7,6 +7,7 @@
     "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json",
     "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
     "/json/ai-use-cases/ai-content-generation/ai-content-generation.json",
-    "/json/ai-use-cases/process-automation-ai/ai-process-automation.json"
+    "/json/ai-use-cases/process-automation-ai/ai-process-automation.json",
+    "/json/ai-use-cases/ai-for-making-money/ai-for-making-money.json"
   ]
 }

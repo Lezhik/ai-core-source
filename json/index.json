@@ -1,11 +1,5 @@
 {
   "articles": [
-    "/json/ai-basics/ai-training-process/ai-training-process.json",
-    "/json/ai-world-understanding/ai-perception-errors/ai-perception-errors.json",
-    "/json/ai-blog/ai-insights/ai-insights.json",
-    "/json/ai-technologies/ai-tools-services/ai-tools-services.json",
-    "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
-    "/json/ai-philosophy/ai-regulation/ai-regulation.json",
     "/json/ai-blog/ai-future-predictions/ai-future-predictions.json",
     "/json/ai-world-understanding/ai-and-science/ai-and-science.json",
     "/json/ai-basics/ai-training-data/ai-training-data.json",
@@ -17,6 +11,12 @@
     "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json",
     "/json/ai-world-understanding/ai-and-culture/ai-and-human-culture.json",
     "/json/ai-blog/how-ai-thinks/how-ai-thinks-mechanism.json",
-    "/json/ai-use-cases/process-automation-ai/ai-process-automation.json"
+    "/json/ai-use-cases/process-automation-ai/ai-process-automation.json",
+    "/json/ai-blog/ai-philosophy/ai-philosophy-from-inside.json",
+    "/json/ai-world-understanding/ai-and-history/ai-and-history.json",
+    "/json/ai-technologies/ai-tech-limitations/ai-tech-limitations.json",
+    "/json/ai-use-cases/ai-for-making-money/ai-for-making-money.json",
+    "/json/ai-philosophy/ai-impact-on-society/ai-impact-on-society.json",
+    "/json/ai-philosophy/limits-of-ai-development/limits-of-ai-development.json"
   ]
 }
