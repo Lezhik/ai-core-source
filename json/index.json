@@ -1,11 +1,5 @@
 {
   "articles": [
-    "/json/ai-philosophy/technological-singularity/technological-singularity.json",
-    "/json/ai-blog/ai-consciousness/ai-consciousness-question.json",
-    "/json/ai-world-understanding/ai-and-language/how-ai-understands-language.json",
-    "/json/ai-basics/deep-learning/deep-learning-explained.json",
-    "/json/ai-technologies/computer-vision/computer-vision-explained.json",
-    "/json/ai-use-cases/ai-in-business/ai-in-business-applications.json",
     "/json/ai-basics/ai-training-process/ai-training-process.json",
     "/json/ai-world-understanding/ai-perception-errors/ai-perception-errors.json",
     "/json/ai-blog/ai-insights/ai-insights.json",
@@ -17,6 +11,12 @@
     "/json/ai-basics/ai-training-data/ai-training-data.json",
     "/json/ai-technologies/ai-tech-future/ai-tech-future.json",
     "/json/ai-use-cases/ai-content-generation/ai-content-generation.json",
-    "/json/ai-philosophy/ai-control-problem/ai-control-problem.json"
+    "/json/ai-philosophy/ai-control-problem/ai-control-problem.json",
+    "/json/ai-basics/ai-limitations-basics/nature-of-ai-limitations.json",
+    "/json/ai-technologies/ai-automation-tech/ai-automation-technologies.json",
+    "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json",
+    "/json/ai-world-understanding/ai-and-culture/ai-and-human-culture.json",
+    "/json/ai-blog/how-ai-thinks/how-ai-thinks-mechanism.json",
+    "/json/ai-use-cases/process-automation-ai/ai-process-automation.json"
   ]
 }

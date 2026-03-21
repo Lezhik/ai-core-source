@@ -8,6 +8,8 @@
     "/json/ai-technologies/generative-ai/generative-ai.json",
     "/json/ai-blog/ai-future-predictions/ai-future-predictions.json",
     "/json/ai-technologies/ai-tools-services/ai-tools-services.json",
-    "/json/ai-basics/ai-training-data/ai-training-data.json"
+    "/json/ai-basics/ai-training-data/ai-training-data.json",
+    "/json/ai-world-understanding/ai-and-culture/ai-and-human-culture.json",
+    "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json"
   ]
 }

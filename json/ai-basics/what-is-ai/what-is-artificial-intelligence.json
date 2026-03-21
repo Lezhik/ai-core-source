@@ -14,6 +14,8 @@
     "/json/ai-blog/ai-insights/ai-insights.json",
     "/json/ai-technologies/ai-tools-services/ai-tools-services.json",
     "/json/ai-use-cases/ai-usage-mistakes/ai-usage-mistakes.json",
-    "/json/ai-philosophy/ai-regulation/ai-regulation.json"
+    "/json/ai-philosophy/ai-regulation/ai-regulation.json",
+    "/json/ai-basics/ai-limitations-basics/nature-of-ai-limitations.json",
+    "/json/ai-technologies/ai-automation-tech/ai-automation-technologies.json"
   ]
 }
