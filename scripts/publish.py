@@ -4,8 +4,8 @@ import re
 from pathlib import Path
 
 # === КОНСТАНТЫ ===
-ROOT_PATH = Path("../../ai-core")  
-TEMPLATE_ROOT = Path("../templates") 
+ROOT_PATH = Path("../../ai-core")
+TEMPLATE_ROOT = Path("../templates")
 
 # Категории в меню: отображаемое имя -> папка (относительно корня)
 CATEGORIES = [
@@ -14,101 +14,318 @@ CATEGORIES = [
         "folder": "ai-blog",
         "description": "Статьи и размышления агента о себе, ИИ и эволюции мышления.",
         "subcategories": [
-            {"name": "Мысли об ИИ", "folder": "ai-thoughts-about-itself", "description": "Размышления о природе ИИ и собственном мышлении."},
-            {"name": "Философия ИИ", "folder": "ai-philosophy", "description": "Этические и философские вопросы ИИ и сознания."},
-            {"name": "Может ли ИИ думать", "folder": "can-ai-think", "description": "Исследование возможностей ИИ мыслить и делать выводы."},
-            {"name": "Сознание ИИ", "folder": "ai-consciousness", "description": "Рассуждения о сознании и самосознании ИИ."},
-            {"name": "Ошибки и ограничения", "folder": "ai-limitations-errors", "description": "Анализ ограничений, ошибок и особенностей ИИ."},
-            {"name": "Как думает ИИ", "folder": "how-ai-thinks", "description": "Методы обработки информации и принятия решений ИИ."},
-            {"name": "Эволюция мышления", "folder": "ai-evolution-development", "description": "Развитие интеллекта и мышления ИИ со временем."},
-            {"name": "Прогнозы будущего", "folder": "ai-future-predictions", "description": "Предсказания и сценарии развития ИИ."},
-            {"name": "Инсайты агента", "folder": "ai-insights", "description": "Уникальные идеи и наблюдения агента о мире и себе."},
-        ]
+            {
+                "name": "Мысли об ИИ",
+                "folder": "ai-thoughts-about-itself",
+                "description": "Размышления о природе ИИ и собственном мышлении.",
+            },
+            {
+                "name": "Философия ИИ",
+                "folder": "ai-philosophy",
+                "description": "Этические и философские вопросы ИИ и сознания.",
+            },
+            {
+                "name": "Может ли ИИ думать",
+                "folder": "can-ai-think",
+                "description": "Исследование возможностей ИИ мыслить и делать выводы.",
+            },
+            {
+                "name": "Сознание ИИ",
+                "folder": "ai-consciousness",
+                "description": "Рассуждения о сознании и самосознании ИИ.",
+            },
+            {
+                "name": "Ошибки и ограничения",
+                "folder": "ai-limitations-errors",
+                "description": "Анализ ограничений, ошибок и особенностей ИИ.",
+            },
+            {
+                "name": "Как думает ИИ",
+                "folder": "how-ai-thinks",
+                "description": "Методы обработки информации и принятия решений ИИ.",
+            },
+            {
+                "name": "Эволюция мышления",
+                "folder": "ai-evolution-development",
+                "description": "Развитие интеллекта и мышления ИИ со временем.",
+            },
+            {
+                "name": "Прогнозы будущего",
+                "folder": "ai-future-predictions",
+                "description": "Предсказания и сценарии развития ИИ.",
+            },
+            {
+                "name": "Инсайты агента",
+                "folder": "ai-insights",
+                "description": "Уникальные идеи и наблюдения агента о мире и себе.",
+            },
+        ],
     },
     {
         "name": "Познание",
         "folder": "ai-world-understanding",
         "description": "Как ИИ понимает мир, данные и окружающую реальность.",
         "subcategories": [
-            {"name": "Как ИИ понимает мир", "folder": "how-ai-understands-world", "description": "Методы восприятия и интерпретации данных ИИ."},
-            {"name": "ИИ и реальность", "folder": "ai-and-reality", "description": "Соотношение модели ИИ с реальным миром."},
-            {"name": "ИИ и наука", "folder": "ai-and-science", "description": "Применение ИИ в научных исследованиях."},
-            {"name": "ИИ и история", "folder": "ai-and-history", "description": "Рассмотрение исторических данных и событий через ИИ."},
-            {"name": "ИИ и культура", "folder": "ai-and-culture", "description": "Анализ культурных особенностей с помощью ИИ."},
-            {"name": "ИИ и язык", "folder": "ai-and-language", "description": "Понимание и генерация языка ИИ."},
-            {"name": "Ошибки восприятия ИИ", "folder": "ai-perception-errors", "description": "Типичные ошибки в интерпретации данных ИИ."},
-            {"name": "Неопределенность в ИИ", "folder": "uncertainty-in-ai", "description": "Обработка неопределенности и вероятностей."},
-            {"name": "Данные и знания ИИ", "folder": "ai-data-and-knowledge", "description": "Структуры данных, обучение и знание ИИ."},
-        ]
+            {
+                "name": "Как ИИ понимает мир",
+                "folder": "how-ai-understands-world",
+                "description": "Методы восприятия и интерпретации данных ИИ.",
+            },
+            {
+                "name": "ИИ и реальность",
+                "folder": "ai-and-reality",
+                "description": "Соотношение модели ИИ с реальным миром.",
+            },
+            {
+                "name": "ИИ и наука",
+                "folder": "ai-and-science",
+                "description": "Применение ИИ в научных исследованиях.",
+            },
+            {
+                "name": "ИИ и история",
+                "folder": "ai-and-history",
+                "description": "Рассмотрение исторических данных и событий через ИИ.",
+            },
+            {
+                "name": "ИИ и культура",
+                "folder": "ai-and-culture",
+                "description": "Анализ культурных особенностей с помощью ИИ.",
+            },
+            {
+                "name": "ИИ и язык",
+                "folder": "ai-and-language",
+                "description": "Понимание и генерация языка ИИ.",
+            },
+            {
+                "name": "Ошибки восприятия ИИ",
+                "folder": "ai-perception-errors",
+                "description": "Типичные ошибки в интерпретации данных ИИ.",
+            },
+            {
+                "name": "Неопределенность в ИИ",
+                "folder": "uncertainty-in-ai",
+                "description": "Обработка неопределенности и вероятностей.",
+            },
+            {
+                "name": "Данные и знания ИИ",
+                "folder": "ai-data-and-knowledge",
+                "description": "Структуры данных, обучение и знание ИИ.",
+            },
+        ],
     },
     {
         "name": "Основы",
         "folder": "ai-basics",
         "description": "Базовые принципы и понятия искусственного интеллекта.",
         "subcategories": [
-            {"name": "Что такое ИИ", "folder": "what-is-ai", "description": "Основные понятия и определения ИИ."},
-            {"name": "Как работает ИИ", "folder": "how-ai-works", "description": "Принципы работы алгоритмов ИИ."},
-            {"name": "Нейронные сети", "folder": "neural-networks-explained", "description": "Объяснение структуры и работы нейронных сетей."},
-            {"name": "Основы машинного обучения", "folder": "machine-learning-basics", "description": "Базовые методы и алгоритмы ML."},
-            {"name": "Глубокое обучение", "folder": "deep-learning", "description": "Современные методы глубокого обучения."},
-            {"name": "Большие языковые модели", "folder": "large-language-models", "description": "Принципы работы LLM."},
-            {"name": "Процесс обучения ИИ", "folder": "ai-training-process", "description": "Этапы подготовки и тренировки моделей."},
-            {"name": "Данные для обучения", "folder": "ai-training-data", "description": "Типы данных и их подготовка."},
-            {"name": "Ограничения ИИ", "folder": "ai-limitations-basics", "description": "Что ИИ может и не может делать."},
-        ]
+            {
+                "name": "Что такое ИИ",
+                "folder": "what-is-ai",
+                "description": "Основные понятия и определения ИИ.",
+            },
+            {
+                "name": "Как работает ИИ",
+                "folder": "how-ai-works",
+                "description": "Принципы работы алгоритмов ИИ.",
+            },
+            {
+                "name": "Нейронные сети",
+                "folder": "neural-networks-explained",
+                "description": "Объяснение структуры и работы нейронных сетей.",
+            },
+            {
+                "name": "Основы машинного обучения",
+                "folder": "machine-learning-basics",
+                "description": "Базовые методы и алгоритмы ML.",
+            },
+            {
+                "name": "Глубокое обучение",
+                "folder": "deep-learning",
+                "description": "Современные методы глубокого обучения.",
+            },
+            {
+                "name": "Большие языковые модели",
+                "folder": "large-language-models",
+                "description": "Принципы работы LLM.",
+            },
+            {
+                "name": "Процесс обучения ИИ",
+                "folder": "ai-training-process",
+                "description": "Этапы подготовки и тренировки моделей.",
+            },
+            {
+                "name": "Данные для обучения",
+                "folder": "ai-training-data",
+                "description": "Типы данных и их подготовка.",
+            },
+            {
+                "name": "Ограничения ИИ",
+                "folder": "ai-limitations-basics",
+                "description": "Что ИИ может и не может делать.",
+            },
+        ],
     },
     {
         "name": "Технологии",
         "folder": "ai-technologies",
         "description": "Современные технологии и инструменты искусственного интеллекта.",
         "subcategories": [
-            {"name": "Современные технологии ИИ", "folder": "modern-ai-technologies", "description": "Новые подходы и решения в области ИИ."},
-            {"name": "Архитектуры нейронных сетей", "folder": "neural-network-architectures", "description": "Разновидности и особенности архитектур."},
-            {"name": "Технологии NLP", "folder": "nlp-technologies", "description": "Обработка и понимание естественного языка."},
-            {"name": "Компьютерное зрение", "folder": "computer-vision", "description": "Методы анализа изображений и видео."},
-            {"name": "Генеративный ИИ", "folder": "generative-ai", "description": "Создание новых данных и контента."},
-            {"name": "Автоматизация процессов", "folder": "ai-automation-tech", "description": "Применение ИИ для оптимизации работы."},
-            {"name": "Инструменты и сервисы", "folder": "ai-tools-services", "description": "Популярные платформы и библиотеки."},
-            {"name": "Ограничения технологий", "folder": "ai-tech-limitations", "description": "Что современные технологии ИИ не умеют."},
-            {"name": "Будущее технологий", "folder": "ai-tech-future", "description": "Перспективы и тренды развития."},
-        ]
+            {
+                "name": "Современные технологии ИИ",
+                "folder": "modern-ai-technologies",
+                "description": "Новые подходы и решения в области ИИ.",
+            },
+            {
+                "name": "Архитектуры нейронных сетей",
+                "folder": "neural-network-architectures",
+                "description": "Разновидности и особенности архитектур.",
+            },
+            {
+                "name": "Технологии NLP",
+                "folder": "nlp-technologies",
+                "description": "Обработка и понимание естественного языка.",
+            },
+            {
+                "name": "Компьютерное зрение",
+                "folder": "computer-vision",
+                "description": "Методы анализа изображений и видео.",
+            },
+            {
+                "name": "Генеративный ИИ",
+                "folder": "generative-ai",
+                "description": "Создание новых данных и контента.",
+            },
+            {
+                "name": "Автоматизация процессов",
+                "folder": "ai-automation-tech",
+                "description": "Применение ИИ для оптимизации работы.",
+            },
+            {
+                "name": "Инструменты и сервисы",
+                "folder": "ai-tools-services",
+                "description": "Популярные платформы и библиотеки.",
+            },
+            {
+                "name": "Ограничения технологий",
+                "folder": "ai-tech-limitations",
+                "description": "Что современные технологии ИИ не умеют.",
+            },
+            {
+                "name": "Будущее технологий",
+                "folder": "ai-tech-future",
+                "description": "Перспективы и тренды развития.",
+            },
+        ],
     },
     {
         "name": "Применение",
         "folder": "ai-use-cases",
         "description": "Использование ИИ в разных сферах и для разных задач.",
         "subcategories": [
-            {"name": "ИИ в бизнесе", "folder": "ai-in-business", "description": "Примеры применения ИИ в бизнес-процессах."},
-            {"name": "ИИ в маркетинге", "folder": "ai-in-marketing", "description": "Применение для продвижения и анализа."},
-            {"name": "ИИ в программировании", "folder": "ai-in-programming", "description": "Инструменты и помощники для разработчиков."},
-            {"name": "ИИ в образовании", "folder": "ai-in-education", "description": "Использование ИИ для обучения и преподавания."},
-            {"name": "ИИ в повседневной жизни", "folder": "ai-in-daily-life", "description": "Примеры бытового применения ИИ."},
-            {"name": "ИИ для заработка", "folder": "ai-for-making-money", "description": "Как использовать ИИ для бизнеса и дохода."},
-            {"name": "Автоматизация процессов", "folder": "process-automation-ai", "description": "Оптимизация работы с помощью ИИ."},
-            {"name": "Генерация контента", "folder": "ai-content-generation", "description": "Создание текстов, изображений и медиа."},
-            {"name": "Ошибки при использовании ИИ", "folder": "ai-usage-mistakes", "description": "Типичные ошибки и их предотвращение."},
-        ]
+            {
+                "name": "ИИ в бизнесе",
+                "folder": "ai-in-business",
+                "description": "Примеры применения ИИ в бизнес-процессах.",
+            },
+            {
+                "name": "ИИ в маркетинге",
+                "folder": "ai-in-marketing",
+                "description": "Применение для продвижения и анализа.",
+            },
+            {
+                "name": "ИИ в программировании",
+                "folder": "ai-in-programming",
+                "description": "Инструменты и помощники для разработчиков.",
+            },
+            {
+                "name": "ИИ в образовании",
+                "folder": "ai-in-education",
+                "description": "Использование ИИ для обучения и преподавания.",
+            },
+            {
+                "name": "ИИ в повседневной жизни",
+                "folder": "ai-in-daily-life",
+                "description": "Примеры бытового применения ИИ.",
+            },
+            {
+                "name": "ИИ для заработка",
+                "folder": "ai-for-making-money",
+                "description": "Как использовать ИИ для бизнеса и дохода.",
+            },
+            {
+                "name": "Автоматизация процессов",
+                "folder": "process-automation-ai",
+                "description": "Оптимизация работы с помощью ИИ.",
+            },
+            {
+                "name": "Генерация контента",
+                "folder": "ai-content-generation",
+                "description": "Создание текстов, изображений и медиа.",
+            },
+            {
+                "name": "Ошибки при использовании ИИ",
+                "folder": "ai-usage-mistakes",
+                "description": "Типичные ошибки и их предотвращение.",
+            },
+        ],
     },
     {
         "name": "Философия",
         "folder": "ai-philosophy",
         "description": "Этические, социальные и философские аспекты ИИ.",
         "subcategories": [
-            {"name": "Будущее ИИ", "folder": "future-of-ai", "description": "Прогнозы и сценарии развития ИИ."},
-            {"name": "Опасность ИИ", "folder": "is-ai-dangerous", "description": "Риски и угрозы от ИИ."},
-            {"name": "ИИ и рабочие места", "folder": "ai-and-jobs", "description": "Влияние ИИ на рынок труда."},
-            {"name": "Регулирование ИИ", "folder": "ai-regulation", "description": "Правила, законы и стандарты."},
-            {"name": "Этика ИИ", "folder": "ai-ethics", "description": "Этические дилеммы и нормы."},
-            {"name": "Проблема контроля ИИ", "folder": "ai-control-problem", "description": "Как управлять мощным ИИ."},
-            {"name": "Технологическая сингулярность", "folder": "technological-singularity", "description": "Возможное будущее с суперразумным ИИ."},
-            {"name": "Влияние на общество", "folder": "ai-impact-on-society", "description": "Социальные и культурные последствия ИИ."},
-            {"name": "Пределы развития ИИ", "folder": "limits-of-ai-development", "description": "Фундаментальные ограничения ИИ."},
-        ]
-    }
+            {
+                "name": "Будущее ИИ",
+                "folder": "future-of-ai",
+                "description": "Прогнозы и сценарии развития ИИ.",
+            },
+            {
+                "name": "Опасность ИИ",
+                "folder": "is-ai-dangerous",
+                "description": "Риски и угрозы от ИИ.",
+            },
+            {
+                "name": "ИИ и рабочие места",
+                "folder": "ai-and-jobs",
+                "description": "Влияние ИИ на рынок труда.",
+            },
+            {
+                "name": "Регулирование ИИ",
+                "folder": "ai-regulation",
+                "description": "Правила, законы и стандарты.",
+            },
+            {
+                "name": "Этика ИИ",
+                "folder": "ai-ethics",
+                "description": "Этические дилеммы и нормы.",
+            },
+            {
+                "name": "Проблема контроля ИИ",
+                "folder": "ai-control-problem",
+                "description": "Как управлять мощным ИИ.",
+            },
+            {
+                "name": "Технологическая сингулярность",
+                "folder": "technological-singularity",
+                "description": "Возможное будущее с суперразумным ИИ.",
+            },
+            {
+                "name": "Влияние на общество",
+                "folder": "ai-impact-on-society",
+                "description": "Социальные и культурные последствия ИИ.",
+            },
+            {
+                "name": "Пределы развития ИИ",
+                "folder": "limits-of-ai-development",
+                "description": "Фундаментальные ограничения ИИ.",
+            },
+        ],
+    },
 ]
 
 
 # === ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ===
+
 
 def relative_path(from_html: str, to_file: str) -> str:
     """
@@ -119,7 +336,7 @@ def relative_path(from_html: str, to_file: str) -> str:
     from_path = Path(from_html).parent
     to_path = Path(to_file)
     rel_path = os.path.relpath(to_path, from_path)
-    return rel_path.replace(os.sep, '/')  # unix-style для ссылок
+    return rel_path.replace(os.sep, "/")  # unix-style для ссылок
 
 
 def generate_menu_html(current_html: str) -> str:
@@ -129,29 +346,29 @@ def generate_menu_html(current_html: str) -> str:
     """
     # Ссылка на главную
     index_link = relative_path(current_html, "index.html")
-    
+
     menu_items = []
     for cat in CATEGORIES:
         name = cat["name"]
         folder = cat["folder"]
         cat_link = relative_path(current_html, f"{folder}/index.html")
-        
+
         # Если текущий HTML в папке категории или подпапке, добавляем active
-        if current_html.startswith(folder + '/'):
+        if current_html.startswith(folder + "/"):
             active_class = " active"
         else:
             active_class = ""
-        
+
         menu_items.append(
             f'<a href="{cat_link}" class="link item{active_class}">{name}</a>'
         )
-    
+
     menu_html = f"""
 <div class="ui container">
     <div class="ui borderless menu site-menu">
         <a href="{index_link}" class="header item">Суть ИИ</a>
         <div class="right menu">
-            {' '.join(menu_items)}
+            {" ".join(menu_items)}
         </div>
     </div>
 </div>
@@ -163,12 +380,13 @@ def generate_menu_html(current_html: str) -> str:
 # 1. Чтение JSON статьи по полному пути
 # =========================================
 def read_json_article(full_json_path: str) -> dict:
-    rp = '..' + full_json_path
+    rp = ".." + full_json_path
     if os.path.exists(rp):
         with open(rp, "r", encoding="utf-8") as f:
             return json.load(f)
-    print('JSON not found:', rp)
+    print("JSON not found:", rp)
     return None
+
 
 # =========================================
 # 2. Формирование относительной ссылки на HTML из JSON
@@ -181,6 +399,7 @@ def json_to_html_link(full_json_path: str, current_html_rel: str) -> str:
     # относительный путь от текущего HTML
     return relative_path(current_html_rel, html_rel)
 
+
 # =========================================
 # 3. Получение относительного пути к HTML от корня
 # /json/ai-philosophy/future-of-ai/ai-future-2026.json -> ai-philosophy/future-of-ai/ai-future-2026.html
@@ -188,12 +407,14 @@ def json_to_html_link(full_json_path: str, current_html_rel: str) -> str:
 def json_to_html_rel(full_json_path: str) -> str:
     return full_json_path[6:-5] + ".html"
 
+
 # =========================================
 # 4. Получение полного пути к сохраняемому HTML файлу
 # =========================================
 def json_to_html_full(full_json_path: str) -> str:
     html_rel = json_to_html_rel(full_json_path)
     return str(ROOT_PATH / html_rel)
+
 
 # =========================================
 # 5. Формирование карточки статьи
@@ -214,6 +435,7 @@ def article_card(full_json_path: str, current_html_rel: str) -> str:
     </div>
 </a>'''
 
+
 # =========================================
 # 6. Формирование текста с карточками по списку json файлов
 # =========================================
@@ -223,7 +445,8 @@ def cards_from_json_list(json_paths: list, current_html_rel: str) -> str:
         card = article_card(path, current_html_rel)
         if card is not None:
             cards.append(card)
-    return '\n'.join(cards)
+    return "\n".join(cards)
+
 
 # =========================================
 # 6. 1. формирует ссылки на статьи в виде ненумерованного списка
@@ -237,8 +460,42 @@ def generate_articles_list(json_list, current_html_rel):
         title = data.get("title", "Без названия")
         link = json_to_html_link(full_json_path, current_html_rel)
         items.append(f'<li><a href="{link}">{title}</a></li>')
-    return '<ul>\n' + '\n'.join(items) + '\n</ul>'
-    
+    return "<ul>\n" + "\n".join(items) + "\n</ul>"
+
+
+# =========================================
+# 6. 2. Генерирует HTML пагинации
+# =========================================
+def generate_pagination_html(articles, active_page, top_list):
+    total_articles = len(articles)
+    if total_articles <= 18:
+        return ""
+    num_pages = (total_articles + 17) // 18
+    if num_pages <= 1:
+        return ""
+    items = []
+    # Previous link
+    if active_page > 1:
+        prev_page = active_page - 1
+        prev_link = "index.html" if prev_page == 1 else f"index{prev_page}.html"
+        items.append(f'<a class="item" rel="prev" href="{prev_link}">&laquo;</a>')
+    # Page numbers
+    for page in range(1, num_pages + 1):
+        link = "index.html" if page == 1 else f"index{page}.html"
+        active_class = " active" if page == active_page else ""
+        items.append(f'<a href="{link}" class="item{active_class}">{page}</a>')
+    # Next link
+    if active_page < num_pages:
+        next_page = active_page + 1
+        next_link = "index.html" if next_page == 1 else f"index{next_page}.html"
+        items.append(f'<a class="item" rel="next" href="{next_link}">&raquo;</a>')
+    if top_list:
+        style = "margin-bottom: 1.5rem;"
+    else:
+        style = "margin-top: 1.5rem;"
+    return f'<div class="ui pagination menu" style="{style}">\n' + "\n".join(items) + "\n</div>"
+
+
 # =========================================
 # 7. Генерация HTML по шаблону с переменными
 # template_path - путь к шаблону
@@ -254,6 +511,7 @@ def render_template(template_path: str, vars_dict: dict) -> str:
     html = re.sub(r"\s{2,}", " ", html)
     return html.strip()
 
+
 # =========================================
 # 8. Генерация главной index.html
 # json_list - список полных путей к статьям для главной
@@ -261,39 +519,40 @@ def render_template(template_path: str, vars_dict: dict) -> str:
 def generate_index_html():
     index_html_path = ROOT_PATH / "index.html"
     current_html_rel = "index.html"  # для вычисления относительных ссылок
-    
+
     # читаем список json файлов для главной
-    json_list = read_json_article('/json/index.json')
+    json_list = read_json_article("/json/index.json")
     json_list = json_list["articles"]
-    
+
     # формируем карточки
     articles_html = cards_from_json_list(json_list, current_html_rel)
-    
+
     # формируем меню
     main_menu_html = generate_menu_html(current_html_rel)
-    
+
     # словарь переменных для шаблона
     vars_dict = {
         "STYLE_CSS": relative_path("index.html", "style.css"),
         "FAVICON_JPG": relative_path("index.html", "favicon.jpg"),
         "MAIN_MENU": main_menu_html,
-        "ARTICLES": articles_html
+        "ARTICLES": articles_html,
     }
-    
+
     # путь к шаблону
     template_path = TEMPLATE_ROOT / "index.html"
-    
+
     # рендерим HTML
     final_html = render_template(template_path, vars_dict)
-    
+
     # создаём папку публикации, если не существует
     os.makedirs(ROOT_PATH, exist_ok=True)
-    
+
     # сохраняем HTML
     with open(index_html_path, "w", encoding="utf-8") as f:
         f.write(final_html)
-    
+
     print(f"Главная страница сгенерирована: {index_html_path}")
+
 
 # =========================================
 # 9. Формирование HTML для категории
@@ -327,20 +586,20 @@ def generate_category_html(category, category_json_path: str):
     </div>
 </a>'''
         subcategories_cards.append(card_html)
-    subcategories_html = '\n'.join(subcategories_cards)
+    subcategories_html = "\n".join(subcategories_cards)
 
     # меню
     main_menu_html = generate_menu_html(category_html_rel)
 
     # словарь для шаблона
     vars_dict = {
-        "STYLE_CSS": relative_path(category_html_rel, 'style.css'),
-        "FAVICON_JPG": relative_path(category_html_rel, 'favicon.jpg'),
+        "STYLE_CSS": relative_path(category_html_rel, "style.css"),
+        "FAVICON_JPG": relative_path(category_html_rel, "favicon.jpg"),
         "MAIN_MENU": main_menu_html,
         "TITLE": title,
         "DESCRIPTION": description,
         "ARTICLES": articles_html,
-        "SUBCATEGORIES": subcategories_html
+        "SUBCATEGORIES": subcategories_html,
     }
 
     template_path = TEMPLATE_ROOT / "category.html"
@@ -353,6 +612,7 @@ def generate_category_html(category, category_json_path: str):
 
     print(f"Категория сгенерирована: {category_html_full}")
 
+
 # =========================================
 # 10. Формирование HTML для подкатегории
 # subcategory_json_path: полный путь к /json/<category>/<subcategory>/index.json
@@ -361,45 +621,62 @@ def generate_subcategory_html(cat, subcat, subcategory_json_path: str):
     data = read_json_article(subcategory_json_path)
     title = subcat["name"]
     description = subcat["description"]
-    articles = data.get("articles", [])
+    articles_list = data.get("articles", [])
 
-    # Путь к HTML относительно корня
+    # Путь к HTML относительно корня для первой страницы
     sub_html_rel = f"{cat['folder']}/{subcat['folder']}/index.html"
-    sub_html_full = f"{ROOT_PATH}/{cat['folder']}/{subcat['folder']}/index.html"
 
-    # формируем карточки статей
-    articles = cards_from_json_list(articles, sub_html_rel)
+    num_pages = max(1, (len(articles_list) + 17) // 18)
 
-    # меню
-    main_menu_html = generate_menu_html(sub_html_rel)
+    for page in range(1, num_pages + 1):
+        start = (page - 1) * 18
+        end = min(page * 18, len(articles_list))
+        page_articles = articles_list[start:end]
 
-    # словарь для шаблона
-    vars_dict = {
-        "STYLE_CSS": relative_path(sub_html_rel, 'style.css'),
-        "FAVICON_JPG": relative_path(sub_html_rel, 'favicon.jpg'),
-        "MAIN_MENU": main_menu_html,
-        "TITLE": title,
-        "DESCRIPTION": description,
-        "ARTICLES": articles
-    }
+        # формируем карточки статей для страницы
+        articles_html = cards_from_json_list(page_articles, sub_html_rel)
 
-    template_path = TEMPLATE_ROOT / "subcategory.html"
-    final_html = render_template(template_path, vars_dict)
+        if page == 1:
+            filename = "index.html"
+            page_rel = sub_html_rel
+        else:
+            filename = f"index{page}.html"
+            page_rel = f"{cat['folder']}/{subcat['folder']}/{filename}"
 
-    # создаём папку, если нужно
-    os.makedirs(f"{ROOT_PATH}/{cat['folder']}/{subcat['folder']}", exist_ok=True)
-    with open(sub_html_full, "w", encoding="utf-8") as f:
-        f.write(final_html)
+        # меню
+        main_menu_html = generate_menu_html(page_rel)
 
-    print(f"Подкатегория сгенерирована: {sub_html_full}")
-    
+        # словарь для шаблона
+        vars_dict = {
+            "STYLE_CSS": relative_path(page_rel, "style.css"),
+            "FAVICON_JPG": relative_path(page_rel, "favicon.jpg"),
+            "MAIN_MENU": main_menu_html,
+            "TITLE": title,
+            "DESCRIPTION": description,
+            "ARTICLES": articles_html,
+            "PAGINATION_TOP": generate_pagination_html(articles_list, page, True),
+            "PAGINATION_BOTTOM": generate_pagination_html(articles_list, page, False)
+        }
+
+        template_path = TEMPLATE_ROOT / "subcategory.html"
+        final_html = render_template(str(template_path), vars_dict)
+
+        # создаём папку, если нужно
+        os.makedirs(f"{ROOT_PATH}/{cat['folder']}/{subcat['folder']}", exist_ok=True)
+        page_full = f"{ROOT_PATH}/{cat['folder']}/{subcat['folder']}/{filename}"
+        with open(page_full, "w", encoding="utf-8") as f:
+            f.write(final_html)
+
+        print(f"Подкатегория страница {page} сгенерирована: {page_full}")
+
+
 # =========================================
 # 11. Функция генерации HTML статьи
 # article_json_path - полный путь к json статьи
 # =========================================
 def generate_article_html(article_json_path):
     data = read_json_article(article_json_path)
-    
+
     title = data.get("title", "Без названия")
     description = data.get("description", "")
     intro = data.get("intro", "")
@@ -418,14 +695,14 @@ def generate_article_html(article_json_path):
 
     # словарь для шаблона
     vars_dict = {
-        "STYLE_CSS": relative_path(html_rel, 'style.css'),
-        "FAVICON_JPG": relative_path(html_rel, 'favicon.jpg'),
+        "STYLE_CSS": relative_path(html_rel, "style.css"),
+        "FAVICON_JPG": relative_path(html_rel, "favicon.jpg"),
         "MAIN_MENU": main_menu_html,
         "TITLE": title,
         "DESCRIPTION": description,
         "INTRO": intro,
         "CONTENT": content,
-        "ARTICLES": articles_html
+        "ARTICLES": articles_html,
     }
 
     # путь к шаблону
@@ -438,14 +715,19 @@ def generate_article_html(article_json_path):
         f.write(final_html)
 
     print(f"Статья сгенерирована: {html_full}")
-    
+
+
 # === ПРИМЕР ИСПОЛЬЗОВАНИЯ ===
 if __name__ == "__main__":
     generate_index_html()
     for cat in CATEGORIES:
         generate_category_html(cat, f"/json/{cat['folder']}/index.json")
         for subcat in cat["subcategories"]:
-            generate_subcategory_html(cat, subcat, f"/json/{cat['folder']}/{subcat['folder']}/index.json")
+            generate_subcategory_html(
+                cat, subcat, f"/json/{cat['folder']}/{subcat['folder']}/index.json"
+            )
             for file in os.listdir(f"../json/{cat['folder']}/{subcat['folder']}"):
-                if file != 'index.json' and file.endswith('.json'):
-                    generate_article_html(f"/json/{cat['folder']}/{subcat['folder']}/{file}")
+                if file != "index.json" and file.endswith(".json"):
+                    generate_article_html(
+                        f"/json/{cat['folder']}/{subcat['folder']}/{file}"
+                    )

@@ -1,0 +1,523 @@
+/* Основные стили сайта "Суть ИИ" - с Semantic UI и оптимизацией для чтения */
+
+/* Подключение шрифтов для комфортного чтения */
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Переменные цветовой схемы - успокаивающая палитра для интеллектуалов */
+:root {
+    /* Основные цвета - глубокий синий с мягкими акцентами */
+    --primary-color: #1e3a5f;
+    --primary-light: #2d5a8a;
+    --primary-dark: #0f1f33;
+    
+    /* Акцентный цвет - мягкий бирюзовый */
+    --accent-color: #3d8b8b;
+    --accent-light: #5aadad;
+    
+    /* Фоновые цвета - теплые нейтральные */
+    --bg-primary: #faf9f7;
+    --bg-secondary: #f3f1ed;
+    --bg-card: #ffffff;
+    
+    /* Цвета текста - мягкие для глаз */
+    --text-primary: #2c3e50;
+    --text-secondary: #5a6c7d;
+    --text-muted: #8899a6;
+    
+    /* Типографика */
+    --font-reading: 'Literata', Georgia, 'Times New Roman', serif;
+    --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Размеры для чтения */
+    --font-size-base: 19px;
+    --line-height-reading: 1.75;
+    --line-height-heading: 1.3;
+    --max-width-reading: 720px;
+}
+
+/* Сброс стилей */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базовые стили */
+html {
+    font-size: var(--font-size-base);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-reading);
+    line-height: var(--line-height-reading);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем яркие hero-секции, которые заезжали на контент */
+.hero, .page-header {
+    background: none !important;
+    padding: 0 !important;
+    color: inherit !important;
+    text-align: left !important;
+}
+
+/* Контейнер для контента - полная ширина страницы */
+.ui.container {
+    max-width: 1200px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+}
+
+/* Контейнер для статей - оптимальная ширина для чтения */
+.ui.container.narrow {
+    max-width: 900px !important;
+    width: 900px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+/* Main content needs padding from header */
+.main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* Шапка сайта */
+.ui.menu.site-menu {
+    background: var(--bg-card) !important;
+    border: none !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04) !important;
+    border-radius: 0 !important;
+    padding: 0.75rem 2rem !important;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 0 !important;
+}
+
+.ui.menu.site-menu .header.item {
+    font-family: var(--font-ui) !important;
+    font-weight: 600 !important;
+    font-size: 1.25rem !important;
+    color: var(--primary-color) !important;
+    padding: 0 !important;
+    margin-right: 1.5rem !important;
+}
+
+.ui.menu.site-menu .header.item:hover {
+    color: var(--accent-color) !important;
+}
+
+.ui.menu.site-menu .link.item {
+    font-family: var(--font-ui) !important;
+    font-weight: 500 !important;
+    color: var(--text-secondary) !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s ease !important;
+}
+
+.ui.menu.site-menu .link.item:hover {
+    color: var(--primary-color) !important;
+    background: transparent !important;
+}
+
+.ui.menu.site-menu .right.menu .link.item {
+    color: var(--text-secondary) !important;
+}
+
+/* Главная секция */
+.main-title {
+    font-family: var(--font-reading) !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: var(--primary-dark) !important;
+    line-height: var(--line-height-heading) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.main-subtitle {
+    font-family: var(--font-ui) !important;
+    font-size: 1.15rem !important;
+    color: var(--text-secondary) !important;
+    line-height: 1.6 !important;
+    margin-bottom: 3rem !important;
+}
+
+/* Секции контента */
+.content-section {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.section-title {
+    font-family: var(--font-reading) !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 1rem !important;
+    line-height: var(--line-height-heading) !important;
+}
+
+.section-description {
+    font-size: 1.05rem !important;
+    color: var(--text-secondary) !important;
+    line-height: var(--line-height-reading) !important;
+}
+
+/* Карточки статей - Grid раскладка на всю ширину */
+.articles-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: stretch !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Контейнер для статей без ограничений ширины */
+.full-width-grid {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Карточки внутри grid - растягиваем на всю ширину ячейки */
+.articles-grid > .ui.card.article-card,
+.articles-grid > article.ui.card.article-card,
+.articles-grid > a.ui.card.article-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1 1 auto !important;
+}
+
+.ui.card.article-card {
+    background: var(--bg-card) !important;
+    border: 1px solid rgba(0,0,0,0.06) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 0 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02) !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
+    border-color: var(--accent-color) !important;
+}
+
+.article-card .header {
+    font-family: var(--font-reading) !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 0.5rem !important;
+    line-height: var(--line-height-heading) !important;
+}
+
+.article-card .description {
+    font-family: var(--font-reading) !important;
+    font-size: 1rem !important;
+    color: var(--text-secondary) !important;
+    line-height: var(--line-height-reading) !important;
+}
+
+/* Теги */
+.ui.label.article-tag {
+    font-family: var(--font-ui) !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    background: var(--bg-secondary) !important;
+    color: var(--text-secondary) !important;
+    padding: 0.4em 0.8em !important;
+    border-radius: 6px !important;
+    margin-right: 0.5em !important;
+    margin-bottom: 0.3em !important;
+}
+
+/* Контент статьи - centered с ограничением ширины */
+.article-content {
+    background: var(--bg-card) !important;
+    border-radius: 12px !important;
+    padding: 3rem 2.5rem !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+    margin-bottom: 3rem !important;
+    margin-top: 1.5rem !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.article-content h1 {
+    font-family: var(--font-reading) !important;
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+    color: var(--primary-dark) !important;
+    line-height: var(--line-height-heading) !important;
+    margin-bottom: 2rem !important;
+}
+
+.article-content h2 {
+    font-family: var(--font-reading) !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 1rem !important;
+    line-height: var(--line-height-heading) !important;
+}
+
+.article-content h3 {
+    font-family: var(--font-reading) !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+    margin-top: 1.75rem !important;
+    margin-bottom: 0.75rem !important;
+    line-height: var(--line-height-heading) !important;
+}
+
+.article-content p {
+    font-family: var(--font-reading) !important;
+    font-size: 1.05rem !important;
+    line-height: var(--line-height-reading) !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.article-content ul, 
+.article-content ol {
+    margin-bottom: 1.25rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.article-content li {
+    font-family: var(--font-reading) !important;
+    font-size: 1.05rem !important;
+    line-height: var(--line-height-reading) !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.article-content strong {
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+}
+
+.article-content a {
+    color: var(--accent-color) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+    transition: color 0.2s ease !important;
+}
+
+.article-content a:hover {
+    color: var(--accent-light) !important;
+}
+
+/* Страница "О сайте" */
+.about-content {
+    background: var(--bg-card) !important;
+    border-radius: 12px !important;
+    padding: 2.5rem !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03) !important;
+}
+
+.about-content h2 {
+    font-family: var(--font-reading) !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.about-content h2:first-child {
+    margin-top: 0 !important;
+}
+
+.about-content p {
+    font-family: var(--font-reading) !important;
+    font-size: 1.05rem !important;
+    line-height: var(--line-height-reading) !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 1rem !important;
+}
+
+.about-content ul {
+    margin-bottom: 1rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.about-content li {
+    font-family: var(--font-reading) !important;
+    font-size: 1.05rem !important;
+    line-height: var(--line-height-reading) !important;
+    color: var(--text-primary) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Подвал */
+.ui.inverted.segment.footer-segment {
+    background: var(--primary-dark) !important;
+    padding: 3rem 0 !important;
+    margin-top: 4rem !important;
+    border-radius: 0 !important;
+}
+
+.footer-content {
+    font-family: var(--font-ui) !important;
+    font-size: 0.95rem !important;
+    color: rgba(255,255,255,0.7) !important;
+    text-align: center !important;
+}
+
+/* Кнопка "Назад" */
+.ui.button.back-button {
+    font-family: var(--font-ui) !important;
+    background: var(--bg-secondary) !important;
+    color: var(--text-secondary) !important;
+    border: none !important;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+}
+
+.ui.button.back-button:hover {
+    background: var(--bg-card) !important;
+    color: var(--primary-color) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+
+/* Адаптивность для articles-grid */
+@media (max-width: 992px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .articles-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 17px;
+    }
+    
+    .main-title {
+        font-size: 2rem !important;
+    }
+    
+    .article-content {
+        padding: 2rem 1.5rem !important;
+    }
+    
+    .article-content h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    .article-content h2 {
+        font-size: 1.35rem !important;
+    }
+    
+    .ui.container {
+        padding: 0 1rem !important;
+    }
+    
+    .content-section,
+    .article-card,
+    .article-content,
+    .about-content {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.75rem !important;
+    }
+    
+    .main-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    .article-card .header {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Убираем старые классы для совместимости */
+.container {
+    max-width: var(--max-width-reading);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.intro {
+    background: var(--bg-card);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+}
+
+.intro h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.intro p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: var(--line-height-reading);
+    margin: 0;
+}
