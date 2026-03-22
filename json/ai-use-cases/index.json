@@ -9,6 +9,7 @@
     "/json/ai-use-cases/ai-content-generation/ai-content-generation.json",
     "/json/ai-use-cases/process-automation-ai/ai-process-automation.json",
     "/json/ai-use-cases/ai-for-making-money/ai-for-making-money.json",
-    "/json/ai-use-cases/ai-usage-mistakes/deskilling-risk.json"
+    "/json/ai-use-cases/ai-usage-mistakes/deskilling-risk.json",
+    "/json/ai-use-cases/ai-in-business/ai-decision-support-systems.json"
   ]
 }

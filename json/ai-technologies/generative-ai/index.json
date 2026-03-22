@@ -1,5 +1,6 @@
 {
   "articles": [
-    "/json/ai-technologies/generative-ai/generative-ai.json"
+    "/json/ai-technologies/generative-ai/generative-ai.json",
+    "/json/ai-technologies/generative-ai/rag-systems-explained.json"
   ]
 }

@@ -9,6 +9,7 @@
     "/json/ai-basics/ai-training-process/ai-training-process.json",
     "/json/ai-basics/ai-training-data/ai-training-data.json",
     "/json/ai-basics/ai-limitations-basics/nature-of-ai-limitations.json",
-    "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json"
+    "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json",
+    "/json/ai-basics/deep-learning/embeddings-explained.json"
   ]
 }

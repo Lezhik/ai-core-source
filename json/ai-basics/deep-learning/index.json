@@ -1,5 +1,6 @@
 {
   "articles": [
-    "/json/ai-basics/deep-learning/deep-learning-explained.json"
+    "/json/ai-basics/deep-learning/deep-learning-explained.json",
+    "/json/ai-basics/deep-learning/embeddings-explained.json"
   ]
 }

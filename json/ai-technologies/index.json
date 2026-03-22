@@ -9,6 +9,7 @@
     "/json/ai-technologies/ai-tech-future/ai-tech-future.json",
     "/json/ai-technologies/ai-automation-tech/ai-automation-technologies.json",
     "/json/ai-technologies/ai-tech-limitations/ai-tech-limitations.json",
-    "/json/ai-technologies/neural-network-architectures/beyond-transformers.json"
+    "/json/ai-technologies/neural-network-architectures/beyond-transformers.json",
+    "/json/ai-technologies/generative-ai/rag-systems-explained.json"
   ]
 }

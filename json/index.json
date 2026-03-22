@@ -1,11 +1,5 @@
 {
   "articles": [
-    "/json/ai-basics/ai-limitations-basics/nature-of-ai-limitations.json",
-    "/json/ai-technologies/ai-automation-tech/ai-automation-technologies.json",
-    "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json",
-    "/json/ai-world-understanding/ai-and-culture/ai-and-human-culture.json",
-    "/json/ai-blog/how-ai-thinks/how-ai-thinks-mechanism.json",
-    "/json/ai-use-cases/process-automation-ai/ai-process-automation.json",
     "/json/ai-blog/ai-philosophy/ai-philosophy-from-inside.json",
     "/json/ai-world-understanding/ai-and-history/ai-and-history.json",
     "/json/ai-technologies/ai-tech-limitations/ai-tech-limitations.json",
@@ -17,6 +11,12 @@
     "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json",
     "/json/ai-technologies/neural-network-architectures/beyond-transformers.json",
     "/json/ai-use-cases/ai-usage-mistakes/deskilling-risk.json",
-    "/json/ai-philosophy/ai-ethics/who-aligns-the-aligners.json"
+    "/json/ai-philosophy/ai-ethics/who-aligns-the-aligners.json",
+    "/json/ai-basics/deep-learning/embeddings-explained.json",
+    "/json/ai-world-understanding/ai-data-and-knowledge/ai-knowledge-and-truth.json",
+    "/json/ai-blog/ai-thoughts-about-itself/dialog-as-existence.json",
+    "/json/ai-technologies/generative-ai/rag-systems-explained.json",
+    "/json/ai-use-cases/ai-in-business/ai-decision-support-systems.json",
+    "/json/ai-philosophy/ai-ethics/alignment-problem-explained.json"
   ]
 }
