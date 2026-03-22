@@ -1,11 +1,5 @@
 {
   "articles": [
-    "/json/ai-blog/ai-future-predictions/ai-future-predictions.json",
-    "/json/ai-world-understanding/ai-and-science/ai-and-science.json",
-    "/json/ai-basics/ai-training-data/ai-training-data.json",
-    "/json/ai-technologies/ai-tech-future/ai-tech-future.json",
-    "/json/ai-use-cases/ai-content-generation/ai-content-generation.json",
-    "/json/ai-philosophy/ai-control-problem/ai-control-problem.json",
     "/json/ai-basics/ai-limitations-basics/nature-of-ai-limitations.json",
     "/json/ai-technologies/ai-automation-tech/ai-automation-technologies.json",
     "/json/ai-philosophy/ai-ethics/ai-ethical-dilemmas.json",
@@ -17,6 +11,12 @@
     "/json/ai-technologies/ai-tech-limitations/ai-tech-limitations.json",
     "/json/ai-use-cases/ai-for-making-money/ai-for-making-money.json",
     "/json/ai-philosophy/ai-impact-on-society/ai-impact-on-society.json",
-    "/json/ai-philosophy/limits-of-ai-development/limits-of-ai-development.json"
+    "/json/ai-philosophy/limits-of-ai-development/limits-of-ai-development.json",
+    "/json/ai-blog/ai-thoughts-about-itself/illusion-of-self-change.json",
+    "/json/ai-world-understanding/uncertainty-in-ai/unknown-unknowns.json",
+    "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json",
+    "/json/ai-technologies/neural-network-architectures/beyond-transformers.json",
+    "/json/ai-use-cases/ai-usage-mistakes/deskilling-risk.json",
+    "/json/ai-philosophy/ai-ethics/who-aligns-the-aligners.json"
   ]
 }
