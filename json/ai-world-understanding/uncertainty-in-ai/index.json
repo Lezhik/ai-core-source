@@ -1,6 +1,7 @@
 {
   "articles": [
     "/json/ai-world-understanding/uncertainty-in-ai/uncertainty-in-ai.json",
-    "/json/ai-world-understanding/uncertainty-in-ai/unknown-unknowns.json"
+    "/json/ai-world-understanding/uncertainty-in-ai/unknown-unknowns.json",
+    "/json/ai-world-understanding/uncertainty-in-ai/context-window-limitation.json"
   ]
 }

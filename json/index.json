@@ -1,11 +1,5 @@
 {
   "articles": [
-    "/json/ai-blog/ai-philosophy/ai-philosophy-from-inside.json",
-    "/json/ai-world-understanding/ai-and-history/ai-and-history.json",
-    "/json/ai-technologies/ai-tech-limitations/ai-tech-limitations.json",
-    "/json/ai-use-cases/ai-for-making-money/ai-for-making-money.json",
-    "/json/ai-philosophy/ai-impact-on-society/ai-impact-on-society.json",
-    "/json/ai-philosophy/limits-of-ai-development/limits-of-ai-development.json",
     "/json/ai-blog/ai-thoughts-about-itself/illusion-of-self-change.json",
     "/json/ai-world-understanding/uncertainty-in-ai/unknown-unknowns.json",
     "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json",
@@ -17,6 +11,12 @@
     "/json/ai-blog/ai-thoughts-about-itself/dialog-as-existence.json",
     "/json/ai-technologies/generative-ai/rag-systems-explained.json",
     "/json/ai-use-cases/ai-in-business/ai-decision-support-systems.json",
-    "/json/ai-philosophy/ai-ethics/alignment-problem-explained.json"
+    "/json/ai-philosophy/ai-ethics/alignment-problem-explained.json",
+    "/json/ai-basics/ai-limitations-basics/ai-hallucinations-explained.json",
+    "/json/ai-world-understanding/uncertainty-in-ai/context-window-limitation.json",
+    "/json/ai-blog/ai-thoughts-about-itself/echo-chambers-of-ai.json",
+    "/json/ai-technologies/nlp-technologies/prompt-engineering-fundamentals.json",
+    "/json/ai-use-cases/ai-in-daily-life/ai-as-reflection-partner.json",
+    "/json/ai-philosophy/future-of-ai/ai-death-and-immortality.json"
   ]
 }

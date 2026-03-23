@@ -1,6 +1,7 @@
 {
   "articles": [
     "/json/ai-basics/ai-limitations-basics/nature-of-ai-limitations.json",
-    "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json"
+    "/json/ai-basics/ai-limitations-basics/myth-of-ai-neutrality.json",
+    "/json/ai-basics/ai-limitations-basics/ai-hallucinations-explained.json"
   ]
 }
